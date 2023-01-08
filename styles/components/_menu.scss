@@ -1,0 +1,121 @@
+@use '../abstracts/variables' as v;
+
+
+//Menu
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  z-index: 3;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-top: 2vh;
+  position: absolute;
+  width: 100%;
+}
+
+.menu{
+  display: flex;
+  flex-direction: row;
+  margin-right: 2%;
+  & p {
+      margin: 0;
+      font-size: 0.9rem;
+      right: 0;
+  }
+  & svg {
+    width: 10px;
+  }
+}
+.menu {
+  cursor: pointer;
+}
+.menuDiv {
+  display: none;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  text-align: center;
+  background-color: v.$white;
+  z-index: 3;
+  &__pages {
+    font-size: 5rem;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: v.$blackv2;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover {
+      color: v.$black;
+    }
+    &__bottom {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  &__images {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30%;
+    height: 60vh;
+    overflow: hidden;
+    & img {
+      height: 65vh;
+      width: 30vw;
+      object-fit: cover;
+    }
+  }
+  &__button {
+    position: absolute;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin: 0;
+    font-size: 0.9rem;
+    margin-right: 1%;
+  }
+  & svg {
+    width: 10px;
+  }
+  & h2 {
+    margin: 0;
+  }
+}
+
+//MEDIA QUERIES
+
+@media screen and (max-width: 500px) {
+  .menuDiv {
+    &__menu {
+      padding-top: 20vh;
+    }
+    &__pages {
+      font-size: 2.5rem;
+      &__bottom {
+        bottom: 20vh;
+      }
+      & pages__ourWork {
+        top: 30vh;
+      }
+    }
+    &__images {
+        height: 35vh;
+        width: 50vw;
+      & img {
+        height: 35vh;
+        width: 50vw;
+      }
+    }
+  }
+}

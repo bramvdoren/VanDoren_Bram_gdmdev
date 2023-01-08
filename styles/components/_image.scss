@@ -1,0 +1,54 @@
+.reveal-img {
+  object-fit: cover;
+  height: 40vh;
+}
+
+.reveal {
+  position: relative;
+  overflow: hidden;
+}
+.reveal-text {
+  opacity: 0;
+  
+}
+
+.image--banner {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.images-slide
+{
+    height: 85vh;
+    width: 90vw;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.images-slide__image
+{
+    // position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 85vh;
+    margin: 0px;
+    object-fit: cover;
+}
+
+.loadimg_sec, .loadtit_sec,
+.loadimg_2
+{
+    top: 100%;
+}
+.loadimg_thr, .loadtit_thr,
+.loadimg_3
+{
+    top: 200%;
+}
+.loadimg_for, .loadtit_for
+.loadimg_4
+{
+    top: 300%;
+}

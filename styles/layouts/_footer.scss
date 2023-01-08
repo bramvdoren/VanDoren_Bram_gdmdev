@@ -1,0 +1,46 @@
+@use '../abstracts/variables' as v;
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: v.$grey;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &-div{
+        height: 100%;
+        right: auto;
+        top: 0;
+        bottom: 0;
+        left: -20%;
+        background-image: linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.8),rgba(255,255,255,0));
+  }
+  &-item {
+      cursor: pointer;
+      color: v.$darkGrey;
+      overflow: hidden;
+      position: relative;
+      margin: 0;
+  }
+}
+
+.footer {
+  &__title {
+      width: 100%;
+      font-size: 18vw;
+      margin: auto;
+      color: v.$white;
+      font-weight: 100;
+      letter-spacing: 0.8rem;
+      margin-bottom: 15%;
+      overflow: hidden;
+  }
+  &__image {
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+  }
+}

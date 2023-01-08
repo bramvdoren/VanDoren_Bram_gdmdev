@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Big Daily Short";
+    src: url("/app/src/fonts/BigDailyShort-LightItalic.woff2") format("woff2"), url("/app/src/fonts/BigDailyShort-LightItalic.woff") format("woff");
+    font-weight: lighter;
+    font-style: italic;
+    font-display: swap;
+}
+  @font-face {
+    font-family: "Clash display";
+    src: url("/app/src/fonts/ClashDisplay-Medium.woff2") format("woff2"), url("/app/src/fonts/ClashDisplay-Medium.woff") format("woff");
+    font-weight: medium;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Surt Regular";
+    src: url("/app/src/fonts/Surt-Regular.woff2") format("woff2"), url("/app/src/fonts/Surt-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }

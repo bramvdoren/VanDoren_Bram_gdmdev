@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" href="./dist/app.css">
+</head>
+<body>
+  <div id="app">
+    <header class="navbar">
+      <div class="navbar-item title-header">GDMDEV</div>
+      <div class="navbar-item menu">
+          <svg viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 10L19 10" stroke="#484036" stroke-width="3"/>
+              <path d="M13 2L21 10.0952L13 19" stroke="#484036" stroke-width="3"/>
+          </svg>
+          <p>Menu</p>
+      </div>
+    </header>
+    <div class="menuDiv">
+      <div class="menuDiv__button">
+        <svg viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 10L19 10" stroke="#484036" stroke-width="3"/>
+          <path d="M13 2L21 10.0952L13 19" stroke="#484036" stroke-width="3"/>
+        </svg>
+        <p>Close</p>
+      </div>
+      <div class="menuDiv__menu">
+        <h2 class="menuDiv__pages pages__ourWork">Our work</h2>
+        <div class="menuDiv__images">
+          <img class="menuDiv__image" src="./src/images/home_page-afbeeldingen/8w.jpg" alt="menu__photo__1">
+          <img class="menuDiv__image" src="./src/images/about_page-afbeeldingen/forner_about_18.jpg" alt="menu__photo__2">
+          <img class="menuDiv__image" src="./src/images/home_page-afbeeldingen/8w.jpg" alt="menu__photo__3">
+          <img class="menuDiv__image" src="./src/images/home_page-afbeeldingen/8w.jpg" alt="menu__photo__4">
+        </div>
+        <div class="menuDiv__pages__bottom">
+          <h2 class="menuDiv__pages pages__about">About</h2>
+          <h2 class="menuDiv__pages pages__contact">Contact</h2>
+        </div>
+      </div>
+    </div>
+    <div class="contact__header">
+      <h2 class="contact__header__title titel--large">Get in touch</h2>
+    </div>
+    <div class="contact__info">
+      <div class="contact__info__content">
+        <p class="contact__info__content__link">info@gdmdev.studio</p>
+        <div class="contact__info__reveal reveal">
+          <img class="reveal-img" src="./src/images/contact_page-afbeeldingen/6_copy.jpg" alt="6_copy">
+          <img class="reveal-img" src="./src/images/contact_page-afbeeldingen/6.jpg" alt="6">
+        </div>
+        <p class="contact__info__content__text">we look forward</p>
+        <span class="title--light">to hearing from you.</span>
+      </div>
+    </div>
+    <div class="contact__form">
+      <form action="#">
+        <label for="name">name</label>
+        <input type="text" id="name" name="name">
+        <label for="email">email</label>
+        <input type="email" id="email" name="email">
+        <label for="message">message</label>
+        <input type="text" id="message" name="message">
+        </input>
+        <div class="contact__form__button">
+          <button type="submit" class="btn">Send</button>
+          <svg class="contact__form__button__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 36" fill="none">
+            <path d="M1.98438 2L32.9998 34" stroke="#CACAB0" stroke-width="4"/>
+            <path d="M1 33.9999H33V2.50781" stroke="#CACAB0" stroke-width="4"/>
+          </svg>
+        </div>
+      </form>
+    </div>
+    <div class="contact__reach" data-animation="zoom-imageDiv">
+      <img src="../app/src/images/contact_page-afbeeldingen/contact_us_footer__1_.jpg" alt="contact-us" data-animation="zoom-image">
+    </div>
+    <footer>
+      <h1 class="footer__title titel--large">GDMDEV</h1>
+      <div class="footer__list uppercase">
+          <p class="footer__list-item">Behance</p>
+          <p class="footer__list-item">Instagram</p>
+          <p class="footer__list-item">Pinterest</p>
+      </div>
+  </footer>
+  </div>
+  <script src="./dist/app.js"></script>
+</body>
+</html>

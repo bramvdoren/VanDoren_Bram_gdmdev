@@ -1,0 +1,66 @@
+@use 'sass:color';
+@use '../abstracts/variables' as v;
+
+$duration: .5s;
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: v.$white;
+    color: v.$brown;
+    font-size: 5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn--primary {
+    &:hover {
+        transform: scale(1.1);
+        background-color: v.$light;
+        color: v.$primary;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+    &:focus,
+    &:focus-visible {
+        outline-color: color.adjust(v.$primary, $lightness: -10%);;
+    }
+}
+
+.btn--loading {
+    position: relative;
+    min-width: 12.5rem;
+    min-height: 3.125rem;
+}
+
+.btn__label {
+    visibility: visible;
+    opacity: 1;
+    text-align: center;
+    transition: visibility 0s linear, opacity $duration linear $duration;
+}
+
+.btn__loader {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity $duration linear, visibility 0s linear $duration;
+}
+
+.btn--spinning {
+    .btn__loader {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0s linear, opacity $duration linear $duration;
+    }
+
+    .btn__label {
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity $duration linear, visibility 0s linear $duration;
+    }
+}

@@ -1,0 +1,119 @@
+@use '../abstracts/variables' as v;
+
+.contact__info {
+  height: 100vh;
+  background-color: v.$white;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  &__content {
+      width: 85%;
+      height: 70vh;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      top: 50%;
+      transform: translateY(-50%);
+      color: v.$brown;
+      font-size: 1.8rem;
+      font-weight: 200;
+      & p {
+          text-transform: uppercase;
+          margin: 0;
+      }
+      & span {
+          font-weight: 100;
+      }
+
+  }
+}
+
+.contact__form {
+  height: 100vh;
+  background-color: v.$white;
+  input[name="message"] {
+      margin-top: 10vh;
+      margin-bottom: 5vh;
+  }
+      &__button {
+          display: flex;
+          justify-content: center;
+          flex-direction: row;
+          align-items: baseline;
+          width:fit-content;
+          cursor: pointer;
+          margin: 0 auto;
+          & svg{
+              width: 20px;
+              path {
+                  stroke: v.$brown;
+              }
+          }
+      }
+}
+.contact__reach {
+  height: 80vh;
+  overflow: hidden;
+  & img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      overflow: hidden;
+  }
+}
+
+.contact__header {
+  width: 100%;
+  color: v.$brown;
+  font-size: 9.5vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  background-color: v.$white;
+  & h2{
+      margin: 0;
+  }
+}
+
+
+
+//MEDIA QUERIES
+
+@media screen and (max-width: 500px) {
+  .contact__header {
+     padding-top: 1rem;
+     font-size: 17vw;
+  }
+  .contact__info {
+      height: 80vh;
+      &__content {
+          width: 95%;
+          top: 40%;
+          height: 60vh;
+          &__link {
+              font-size: 7vw;
+          }
+          & span {
+              font-size: 6vw;
+          }
+      }
+      &__reveal {
+          width: 100%;
+          margin-top: 1rem;
+          & img {
+              width: 40%;
+              height: 25vh;
+          }
+          & span {
+              font-size: 1rem;
+          }
+      }
+  }
+  .contact__form {
+      height: 80vh;
+      & form {
+          padding-top: 0;
+      }
+  }
+}

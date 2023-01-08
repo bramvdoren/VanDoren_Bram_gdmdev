@@ -1,0 +1,18 @@
+.cursor {
+  color:black;
+width: 50px;
+height: 50px;
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+display: none;
+}
+
+.cursor_text {
+ padding: 6px;
+ pointer-events: none;
+ font-weight: bold;
+ font-size: 2rem;
+ text-transform: uppercase;
+}

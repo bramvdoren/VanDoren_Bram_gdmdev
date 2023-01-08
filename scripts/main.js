@@ -1,0 +1,20 @@
+import "./error";
+import "./animations/menu";
+import "./animations/fade-in-down";
+import "./animations/mousefollow";
+import "./animations/scroll-grid";
+import "./animations/sticky";
+import "./animations/zoom-out";
+import "./animations/fade-in-up";
+import "./animations/slide-vertical";
+import "./animations/about-slide-vertical";
+import "./animations/fade-up-contact";
+import "./animations/footer";
+import "./animations/horinzontal-scroll";
+import "./animations/form-hover";
+import "./animations/zoom-image";
+import "./animations/contact-header";
+import "./animations/zoom-image-out";
+import "./animations/reveal-animation";
+import gsap from "gsap";
+

@@ -1,0 +1,521 @@
+@use '../abstracts/variables' as v;
+
+
+.about__hero {
+  background-image: url("/app/src/images/about_page-afbeeldingen/aboutmain.jpg");
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+
+  &__title {
+      color: v.$white;
+      font-weight: 500;
+      font-size: 4rem;
+      width: 70%;
+  }
+}
+
+.about__hero__title {
+  position: absolute;
+  bottom: 0;
+  margin-left: 3%;
+}
+
+
+.about__intro__text {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1rem;
+  
+  &__titel {
+      color: v.$olive;
+      font-size: 2.5rem;
+      font-weight: 100;
+      line-height: 3rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+  }
+  &__par {
+      color: v.$brown;
+      text-transform: uppercase;
+      width: 90%;
+      margin: 0 auto;
+      font-size: 0.7rem;
+      font-family: "Surt Regular";
+      font-weight: bold;
+      color: v.$brown;
+  }
+}
+
+.about__services {
+  background-image: url("/app/src/images/about_page-afbeeldingen/forner_about_11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.about__relations {
+  background-color: v.$grey;
+  height: 100vh;
+}
+.about__relations__text {
+  width: 65%;
+  margin: 0 auto;
+  color: v.$brown;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 4rem;
+}
+.about__relations__images {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  justify-content: center;
+
+}
+// .about__relations__images img {
+//     width: 100%;
+// }
+
+.about__services__subjects {
+  background: v.$beigev2;
+  margin: 0 auto;
+  width: 50%;
+  height: 90vh;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin-top: 3rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+
+  &__title {
+      font-size: 4.5rem;
+      font-weight: 200;
+      color: v.$brown;
+      margin: 0;
+  }
+  &__list {
+      padding-top: 8rem;
+      font-family: "Surt Regular";
+      color: v.$olivev3;
+      font-size: 0.9rem;
+      font-weight: 400;
+      margin: 0 auto;
+  }
+}
+
+.about__features {
+  height: 80vh;
+  background-color: v.$white;
+  position: relative;
+  &__title {
+      width: 45%;
+      text-align: center;
+      margin: 0 auto;
+      padding-top: 2rem;
+      font-size: 4.5rem;
+      font-weight: 200;
+      color: v.$brown;
+  }
+  &__scroll {
+      position: absolute;
+      bottom: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      height: 5vh;
+      width: 100%;
+      overflow: hidden;
+      &-image {
+          margin-right:10vw;
+          align-items: center;
+      }
+  }
+}
+.about__whoWeAre {
+  background-color: v.$olive;
+  height: 290vh;
+  &__title {
+      font-size: 9.5rem;
+      color: v.$brown;
+      font-weight: 200;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+  }
+  &__persons {
+      position: relative;
+          &--one {
+              
+              height: 80vh;
+              position: absolute;
+              left: 10vw;
+              img {
+                  width: 100%;
+                  height: 70vh;
+                  object-fit: cover;
+                  mix-blend-mode: multiply;
+                  margin-bottom: 1rem;
+              }
+              h3 {
+                  font-size: 2.2rem;
+                  font-weight: 100;
+                  margin: 0;
+              }
+              p {
+                  font-size: 0.6rem;
+              }
+          }
+          &--two {
+              
+              height: 80vh;
+              position: absolute;
+              left: 55vw;
+              top: 50vh;
+              img {
+                  width: 100%;
+                  height: 70vh;
+                  object-fit: cover;
+                  mix-blend-mode: multiply;
+                  margin-bottom: 1rem;
+              }
+              h3 {
+                  font-size: 2.2rem;
+                  font-weight: 100;
+                  margin: 0;
+              }
+              p {
+                  font-size: 0.6rem;
+              }
+          }
+          &--three {
+              
+              height: 80vh;
+              position: absolute;
+              top: 115vh;
+              left: 10vw;
+              img {
+                  width: 100%;
+                  height: 70vh;
+                  object-fit: cover;
+                  mix-blend-mode: multiply;
+                  margin-bottom: 1rem;
+              }
+              h3 {
+                  font-size: 2.2rem;
+                  font-weight: 100;
+                  margin: 0;
+              }
+              p {
+                  font-size: 0.6rem;
+              }
+          }
+  }
+}
+
+
+
+.about__studio {
+  height: 150vh;
+  background-image: url("/app/src/images/about_page-afbeeldingen/forner_about_18.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &__frame {
+      background-color: v.$beigev2;
+      width: 50%;
+      height: 90vh;
+      margin: 0 auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin-top: 20vh;
+      text-align: center;
+      padding-top: 2rem;
+
+      & img {
+          width: 35%;
+          margin: 0 auto;
+          z-index: 1;
+      }
+      &__title--top {
+          margin: 0 auto;
+          font-size: 4.5rem;
+          font-weight: 100;
+          color: v.$brown;
+          z-index: 2;
+          margin-bottom: -5vh;
+      }
+      &__title--bottom {
+          margin: 0 auto;
+          font-size: 4.5rem;
+          font-weight: 100;
+          color: v.$brown;
+          z-index: 2;
+          margin-top: -8vh;
+      }
+      p {
+          position: absolute;
+          bottom: 0;
+          font-size: 0.8rem;
+          text-transform: uppercase;
+          text-align: center;
+      }
+  }
+}
+
+.about__info {
+  height: 150vh;
+  background-color: v.$white;
+  color: v.$olive;
+  font-size: 2.5rem;
+  font-weight: 100;
+  font-family: "Surt Regular";
+  &__middle {
+    position: absolute;
+    left: 30vw;
+  }
+  &__image {
+      width: 35vw;
+      height: 70vh;
+      object-fit: cover;
+  }
+  &__title--top {
+      color: v.$olive;
+      font-size: 2.5rem;
+      font-weight: 100;
+      width: 65vw;
+      margin: 0;
+  }
+  &__title--bottom {
+      color: v.$olive;
+      font-size: 2.5rem;
+      font-weight: 100;
+      width: 65vw;
+      margin: 0;
+  }
+}
+
+
+.about__contact {
+  // background-image: url("/app/src/images/about_page-afbeeldingen/book2.jpg");
+  // background-repeat: no-repeat;
+  height: 150vh;
+  // background-size: cover;
+  // background-position: center;
+  position: relative;
+  overflow: hidden;
+  & img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+}
+
+//animation about
+.about__intro__images {
+  width: 50%;
+  margin: 0 auto;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.about__intro__images__image {
+  bottom: 0;
+  width: 100%;
+  margin: 0px;
+  height: 90vh;
+  object-fit: cover;
+}
+
+
+
+
+
+
+//MEDIA QUERIES
+
+@media screen and (max-width: 500px) {
+  .about__hero {
+      background-position-x: 30%;
+      &__title {
+          color: v.$white;
+          font-weight: 500;
+          font-size: 2.5rem;
+          width: 70%;
+      }
+  }
+  .about__intro {
+    display: flex;
+    flex-direction: column;
+      &__text {
+          order: 1;
+          width: 95%;
+         &__titel {
+          font-size: 1.4rem;
+          line-height: 120%;
+          width: 100%;
+          text-align: left;
+         }
+         &__par {
+          font-size: 0.55rem;
+         }
+      }
+      &__images {
+        order: 2;
+        height: 60vh;
+        width: 100%;
+      }
+  }
+  .about__services__subjects {
+      width: 95%;
+      margin-top: 60vh;
+      padding-bottom: 0;
+      &__list {
+          padding-top: 3rem;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          & li {
+              margin-top: 1vh;
+          }
+      }
+      &__title {
+          font-size: 3.5rem;
+      }
+  }
+  .about__relations {
+      height: 120vh;
+      padding-bottom: 50vh;
+      &__text {
+          padding-top: 70vh;
+          width: 95%;
+      }
+  }
+  .about__features {
+      height: 50vh;
+      &__title {
+          width: 80%;
+          font-size: 13vw;
+      }
+  }
+  .about__whoWeAre {
+      height: 290vh;
+      &__title {
+          font-size: 3rem;
+      }
+      &__persons {
+          position: relative;
+          text-align: center;
+          margin: 0;
+          &--one {
+              position: relative;
+              left: 0;
+              width: 90%;
+              margin: 0 auto;
+          }
+          &--two {
+              position: relative;
+              left: 0;
+              width: 90%;
+              margin: 0 auto;
+              top: 10vh;
+          }
+          &--three {
+              position: relative;
+              left: 0;
+              width: 90%;
+              margin: 0 auto;
+              top: 20vh;
+          }
+      }
+  }
+  .about__studio {
+      background-size:contain;
+      background-position: unset;
+      background-image: url("/app/src/images/about_page-afbeeldingen/forner_about_18\ \(4\).jpg");
+      height: 130vh;
+      &__frame {
+          width: 100%;
+          height: 70vh;
+          bottom: 0;
+          margin-top: 0;
+          padding-top: 0;
+          & p {
+              width: 100%;
+              font-size: 0.6rem;
+              line-height: 150%;
+              left: 0;
+              right: 0;
+              margin: auto;
+              position: absolute
+          }
+          & h3 {
+              font-size: 3rem;
+          }
+          & img {
+              height: 40vh;
+              width: 50%;
+          }
+      }
+      
+  }
+  .contact {
+      &__text {
+          width: 90%;
+          margin: auto;
+          left: 5%;
+          right: 5%;
+          & h2 {
+              font-size: 1.1rem;
+              letter-spacing: 0.1rem;
+          } 
+      }
+  }
+  .footer {
+      &__title {
+          font-size: 18vw;
+          letter-spacing: 0.2rem;
+      }
+      &__list {
+          font-size: 0.8rem;
+      }
+  }
+  .about__info {
+    height: 90vh;
+    font-size: 1.4rem;
+    &__title--top {
+      font-size: 1.4rem;
+      line-height: 120%;
+      width: 100%;
+      padding-top: 2rem;
+    }
+    &__middle {
+      left: 2%;
+      & img {
+        width: 55%;
+        height: 40vh;
+      }
+    }
+    &__title--bottom {
+      font-size: 1.4rem;
+      line-height: 120%;
+      width: 100%;
+    } 
+  }
+
+}

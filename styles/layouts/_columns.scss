@@ -1,0 +1,30 @@
+@use '../abstracts/variables' as v;
+.columns {
+    display: flex;
+    flex-direction: row;
+    // grid-template-columns: 60vw 40vw;
+    // grid-template-rows: 1fr;
+    &_column {
+        &__title {
+            vertical-align: middle;
+            width: 100%;
+            color: v.$olive;
+            font-weight: 100;
+            & span {
+                color: v.$brown;
+            }
+        }
+    }
+}
+.intro__grid__text {
+    width: 40vw;
+    &__title {
+        vertical-align: middle;
+        width: 100%;
+        color: v.$olive;
+        font-weight: 100;
+        & span {                
+            color: v.$brown;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 1rem;
+    width: fit-content;
+
+    div {
+        border-radius: 4px;
+        background-color: white;
+        box-shadow: 2px 2px 4px hsla(0,0,0,.1);
+    }
+}

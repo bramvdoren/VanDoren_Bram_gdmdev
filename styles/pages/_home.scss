@@ -1,0 +1,217 @@
+@use '../abstracts/variables' as v;
+
+.intro {
+  height: 90vh;
+  &__content {
+      text-align: center;
+      margin: 0 auto;
+      color: v.$brown;
+      font-size: 1.5rem;
+  }
+  &__images {
+      width: 100%;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+  &__title {
+      text-transform: uppercase;
+      margin-bottom: 0;
+  }
+}
+
+.line {
+  width: 80%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.line span {
+  font-size: 1.5rem;
+  opacity: 0;
+}
+
+.contact {
+  height: 120vh;
+  overflow: hidden;
+  position: relative;
+  &__image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      overflow: hidden;
+  }
+  &__text {
+      text-align: center;
+      background: v.$beigev2;
+      color: v.$brown;
+      width: 50%;
+      margin: 0 auto;
+      position: absolute;
+      bottom: -17%;
+      left: 25%;
+      height: 85vh;
+      h2 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin:auto;
+        margin-bottom: 1rem;
+        color: v.$beige;
+        font-weight:bold;
+    }
+
+    h3 {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-size: 2rem;
+    }
+    span {
+        display: block;
+        font-weight: 500;
+    }
+
+    p {
+        padding-top: 1.5rem;
+        font-weight: 200;
+        width: 90%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        font-weight: 500;
+    }
+  }
+}
+
+.all-projects {
+  &__title {
+      font-family: "Surt Regular";
+      margin-left: 2.5%;
+      color: v.$olive;
+      font-weight: 100;
+      font-size: 4.5rem;
+      margin-bottom: 0;
+      cursor: pointer;
+      & svg {
+          width: 20px;
+      }
+      &:hover {
+          text-decoration: underline;
+      }
+  }
+  &__grid {
+      &__image {
+          overflow: hidden;
+      }
+  }
+}
+
+
+.highlight {
+  position: relative;
+  &__title {
+      font-size: 3rem;
+      height: 12vh;
+      color: v.$brown;
+      position: relative;
+      top: 0;
+      overflow: hidden;
+      margin-left: 3%;
+      &__item {
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          margin: 0px;
+          font-weight: 300;
+      }
+  }
+}
+
+//MEDIA QUERIES
+
+@media screen and (max-width: 500px) {
+  .intro {
+      &__content {
+          & h2 {
+              font-size: 5vw;
+              margin-bottom: 0;
+          }
+          & span {
+              font-size: 4.5vw;
+          }
+          &__images {
+              width: 75%;
+              margin-top: 2vh;
+              justify-content: space-evenly;
+              & img {
+                  height: 20vh;
+              }
+          }
+      }
+  }
+  .images-grid__image:nth-child(1) {
+      width: 100%;
+  }
+  .images-slide {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+  }
+  .highlight__title {
+      font-size: 7vw;
+  }
+  .all-projects {
+      position: relative;
+      height: 40vh;
+      &__title {
+          position: absolute;
+          bottom: 0;
+          font-size: 2rem;
+      }
+      &__images {
+          display: none;
+      }
+  }
+  .contact__text {
+      width: 95%;
+      left: 2.5%;
+  }
+  .hero {
+      &__subtitel {
+          font-size: 5vw;
+          top: 85vh;
+      }
+  }
+  .intro__grid {
+      display: flex;
+      flex-direction: column;
+      &__text {
+      order: 1;
+      width: 100vw;
+      display: flex;
+      &__title {
+          display: block;
+      }
+      }
+      &__images {
+          order: 2;
+          width: 100%;
+      }
+  }
+  .highlight__image {
+    width: 95%;
+  }
+}
